@@ -43,8 +43,8 @@ jobs:
         git config --global user.email "nabilfaruk6@gmail.com"
         git config --global user.name "Istiaque Faroque Nabil"
 
-        git clone https://x-access-token:${{ secrets.GITOPS_PAT }}@github.com/yourusername/portfolio-gitops.git
-        cd portfolio-gitops/portfolio-app
+        git clone https://x-access-token:${{ secrets.GITOPS_PAT }}@github.com/Nabil720/K8s_project_1_gitops.git
+        cd K8s_project_1_gitops/portfolio-app
 
         # Replace image tag with latest
         sed -i 's|image: nanil0034/portfolio-app:.*|image: nanil0034/portfolio-app:latest|' deployment.yaml
