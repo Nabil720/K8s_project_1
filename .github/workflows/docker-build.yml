@@ -28,7 +28,7 @@ jobs:
 
     - name: Run container to test
       run: |
-        docker run -d -p 3000:3000 --name test-portfolio yourdockerhubusername/portfolio-app:latest
+        docker run -d -p 3000:3000 --name test-portfolio nanil0034/portfolio-app:latest
         sleep 10
         docker ps -a
         docker logs test-portfolio
