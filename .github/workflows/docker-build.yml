@@ -1,4 +1,4 @@
-name: Build,Test, Push Docker Image and Update GitOps Repo
+name: Build, Test, Push Docker Image and Update GitOps Repo
 
 on:
   push:
