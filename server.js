@@ -46,7 +46,7 @@ const portfolioData = {
   title: "DevSecOps Engineer",
   email: "nabilfaruk6@gmail.com",
   phone: "+880 1521733936",
-  location: "Dhaka, Bangladesh",
+  location: "Kazipara ,Dhaka, Bangladesh",
   github: "https://github.com/nabilfaruk",
   linkedin: "https://linkedin.com/in/nabilfaruk",
   
