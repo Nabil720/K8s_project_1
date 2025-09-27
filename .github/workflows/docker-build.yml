@@ -24,11 +24,11 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t yourdockerhubusername/portfolio-app:latest .
+      run: docker build -t nanil0034/portfolio-app:latest .
 
     - name: Run container to test
       run: |
-        docker run -d -p 3000:3000 --name test-portfolio yourdockerhubusername/portfolio-app:latest
+        docker run -d -p 3000:3000 --name test-portfolio nanil0034/portfolio-app:latest
         sleep 10
         docker ps -a
         docker logs test-portfolio
@@ -36,4 +36,4 @@ jobs:
         docker rm test-portfolio
 
     - name: Push to Docker Hub
-      run: docker push yourdockerhubusername/portfolio-app:latest
+      run: docker push nanil0034/portfolio-app:latest
