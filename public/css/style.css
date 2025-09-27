@@ -726,7 +726,7 @@ section {
 /* Footer */
 .footer {
     background: var(--background-card);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(181, 122, 122, 0.1);
     padding: 2rem 0;
     text-align: center;
 }

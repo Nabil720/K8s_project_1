@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 backdrop-filter: blur(10px);
                 flex-direction: column;
                 padding: 2rem;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                border-top: 1px solid rgba(172, 93, 93, 0.1);
                 transform: translateY(-100%);
                 opacity: 0;
                 transition: all 0.3s ease;
