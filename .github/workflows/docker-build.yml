@@ -46,9 +46,15 @@ jobs:
         git clone https://x-access-token:${{ secrets.GITOPS_PAT }}@github.com/Nabil720/K8s_project_1_gitops.git
         cd K8s_project_1_gitops/portfolio-app
 
-        # Replace image tag with latest
+        # Update the image tag in deployment.yaml
         sed -i 's|image: nanil0034/portfolio-app:.*|image: nanil0034/portfolio-app:latest|' deployment.yaml
 
         git add deployment.yaml
-        git commit -m "Update image tag to latest"
-        git push origin main
+
+        # Only commit if something actually changed
+        if git diff --cached --quiet; then
+          echo "No changes to commit."
+        else
+          git commit -m "Update image tag to latest"
+          git push origin main
+        fi
