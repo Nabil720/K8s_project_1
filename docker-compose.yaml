@@ -10,4 +10,4 @@ services:
       - NODE_ENV=production
     volumes:
       - .:/usr/src/app
-    command: ["npm", "start"]
+    command: ["npm","start"]

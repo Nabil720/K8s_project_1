@@ -6,7 +6,6 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm ci --only=production
 
-# Copy the rest of the application code
 COPY . .
 
 # Expose the port and run the app
